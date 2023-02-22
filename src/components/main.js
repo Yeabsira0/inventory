@@ -20,12 +20,12 @@ const AddItemSection = () => {
     </section>
     )
 }
-var counter = (function(initial) {
+var counter = function(initial) {
     var count = initial;
     return function() {
         return ++count;
     }
-});
+};
 
 let count = counter(2)
 const InpForm = () => {
